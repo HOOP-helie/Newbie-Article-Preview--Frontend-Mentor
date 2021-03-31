@@ -95,6 +95,7 @@ button:active {
   margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 /* Top part of the card */
@@ -187,12 +188,10 @@ button:active {
   border-radius: 0 0 10px 10px;
   position: absolute;
   bottom: 0;
-  right: 0;
-  left: 100%;
-  max-width: 0%;
-  padding: 1.2rem 0;
-  overflow: hidden;
-  transition: max-width 0.6s, left 0.6s, padding 0.6s;
+  width: 100%;
+  padding: 1.2rem 10%;
+  transform: translateX(102%);
+  transition: transform 0.6s;
 }
 .share-footer p,
 .share-popup p {
@@ -212,10 +211,8 @@ button:active {
 }
 
 .share-footer--active {
-  padding: 1.2rem 2rem;
-  max-width: 100%;
-  left: 0;
-  transition: left 0.6s, padding 0.6s;
+  transform: translateX(0);
+  transition: transform 0.6s;
 }
 
 .share-popup {
@@ -224,10 +221,14 @@ button:active {
 
 /* Desktop version */
 @media (min-width: 50rem) {
+  .share-footer {
+    display: none;
+  }
   .card {
     display: flex;
     align-items: center;
     max-width: 720px;
+    overflow: visible;
   }
 
   .article__header {
