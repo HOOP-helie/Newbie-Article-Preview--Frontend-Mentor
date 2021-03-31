@@ -73,7 +73,7 @@ body {
 button:focus,
 button:active {
   outline: none;
-  box-shadow: -1px 0px 3px 4px #b9c8da;
+  box-shadow: -1px 0px 4px 4px rgba(185, 200, 218, 0.8);
 }
 
 /* ======================================= */
@@ -91,7 +91,7 @@ button:active {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 3px 17px 28px 8px rgb(0 0 0 / 6%);
-  width: 88vw;
+  width: 88%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
@@ -99,12 +99,12 @@ button:active {
 
 /* Top part of the card */
 .article__header {
+  background-image: url("../images/drawers.jpg");
+  background-size: cover;
+  background-position: top;
   border-radius: 10px 10px 0 0;
-  height: 200px;
+  height: 12.5rem;
   overflow: hidden;
-}
-.article__header img {
-  width: 100%;
 }
 
 /* Article description */
@@ -227,23 +227,20 @@ button:active {
   .card {
     display: flex;
     align-items: center;
-    max-width: 725px;
+    max-width: 720px;
   }
 
   .article__header {
     border-radius: 10px 0 0 10px;
-    width: 40%;
-    height: auto;
-    max-height: 280px;
-  }
-  .article__header img {
-    width: 123%;
+    background-position: left;
+    width: 39%;
+    height: 280px;
   }
 
   .article__info--container {
     margin: 0 auto 0;
-    padding: 1.5rem 2.4rem 0;
-    width: 60%;
+    padding: 2rem 2.4rem 0 2.4rem;
+    width: 61%;
   }
   .article__title {
     font-size: 1.3rem;
@@ -252,7 +249,7 @@ button:active {
   }
   .card__footer {
     margin-top: 1.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
   }
 
   .profile-picture {
