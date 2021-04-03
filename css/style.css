@@ -94,6 +94,7 @@ button:active {
   width: 88%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  max-width: 30rem;
   position: relative;
   overflow: hidden;
 }
@@ -167,8 +168,10 @@ button:active {
   background-color: var(--light);
   border: none;
   border-radius: 50%;
+  cursor: pointer;
   min-width: 35px;
   min-height: 35px;
+  transition: background-color 0.2s;
 }
 .share-btn-active-desktop {
   display: none;
@@ -178,6 +181,15 @@ button:active {
 .share-btn img,
 .share-btn-active-desktop img {
   width: 15px;
+}
+
+.share-btn:hover {
+  background-color: #cfd9e4;
+  transition: background-color 0.2s;
+}
+.share-btn-active-desktop:hover {
+  background-color: #48556a;
+  transition: background-color 0.2s;
 }
 
 /* Active Share footer for mobile */
@@ -204,10 +216,19 @@ button:active {
 .share-popup a {
   margin: 0 8px;
 }
+.share-footer a:hover {
+  filter: opacity(0.8);
+}
 
 .share-footer .share-btn {
   background-color: var(--grey-blue);
   margin-left: auto;
+  transition: background-color 0.3s;
+}
+
+.share-footer .share-btn:hover {
+  background-color: #7d8faa;
+  transition: background-color 0.3s;
 }
 
 .share-footer--active {
@@ -227,7 +248,7 @@ button:active {
   .card {
     display: flex;
     align-items: center;
-    max-width: 720px;
+    max-width: 45rem;
     overflow: visible;
   }
 
@@ -290,6 +311,9 @@ button:active {
     margin-right: 10px;
     font-size: 0.8rem;
     letter-spacing: 0.3rem;
+  }
+  .share-popup a:hover {
+    filter: opacity(0.8);
   }
 
   .share-btn-display-desktop {
